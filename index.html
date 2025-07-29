@@ -1,24 +1,49 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>My Clash Dashboard</title>
-    <meta charset="UTF-8" />
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        background-color: #0c1e2c;
-        color: #ffffff;
-        text-align: center;
-        padding: 40px;
-      }
-      h1 {
-        color: #00ffa3;
-      }
-    </style>
-  </head>
-  <body>
-    <h1>🏗 Clash Builder Dashboard</h1>
-    <p>This is the start of your real-time builder tracker!</p>
-    <p>Live timers and builder slots will show here soon...</p>
-  </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Clash Builder Dashboard</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #0e1a24;
+      color: #ffffff;
+      padding: 30px;
+    }
+    h1 {
+      color: #00ff99;
+    }
+    .section {
+      margin-top: 20px;
+      padding: 20px;
+      background: #16222e;
+      border-radius: 10px;
+    }
+    .timer-row {
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: space-between;
+    }
+  </style>
+</head>
+<body>
+  <h1>🏗 Clash Builder Dashboard</h1>
+
+  <div class="section">
+    <h2>Main Village</h2>
+    <p><strong>Builders Available:</strong> <span id="main-count">2/59</span></p>
+    <div id="main-timers">
+      <div class="timer-row"><span>TH15 #3</span><span>5h 12m left</span></div>
+      <div class="timer-row"><span>TH14 #6</span><span>6h 44m left</span></div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Builder Base</h2>
+    <p><strong>Builders Available:</strong> <span id="bb-count">1/10</span></p>
+    <div id="bb-timers">
+      <div class="timer-row"><span>OTTO #1</span><span>8h 32m left</span></div>
+    </div>
+  </div>
+</body>
 </html>
